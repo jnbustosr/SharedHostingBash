@@ -34,6 +34,7 @@ cd ..
 rm -R wordpress
 #create wp config
 cp wp-config-sample.php wp-config.php
+rm wp-config-sample.php
 #set database details with perl find and replace
 perl -pi -e "s/database_name_here/$dbname/g" wp-config.php
 perl -pi -e "s/username_here/$dbuser/g" wp-config.php
